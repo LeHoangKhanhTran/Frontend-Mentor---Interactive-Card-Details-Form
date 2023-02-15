@@ -1,0 +1,362 @@
+:root {
+    --lightgrayishviolet: hsl(270, 3%, 87%);
+    --darkgrayishviolet: hsl(279, 6%, 55%);
+    --verydarkviolet: hsl(278, 68%, 11%);
+    --red: hsl(0, 100%, 66%);  
+    font-size: 1vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    display: flex;
+    flex-direction: row;
+    font-family: "Space Grotesk", sans-serif;
+    overflow-x: none;
+}
+
+#background-img {
+    width: 34vw;
+    height: 100vh;
+}
+
+.frontcard {
+   position: absolute;
+   top: 10vw;
+   left: 18vw;
+}
+
+.frontcard img {
+    width: 21.9vw;
+    height: 12.5vw;
+}
+
+.frontcard header {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+#white-circle {
+    width: 2.2vw;
+    height: 2.2vw;
+    background-color: white;
+    border-radius: 90%;
+}
+
+#transparent-circle {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 90%;
+    margin-top: 0.6vw;
+    color: transparent;
+    border: 1px solid white;
+}
+
+#card-num {
+    position: absolute;
+    color: white;
+    left: 1.4rem;
+    bottom: 3.8rem;
+    font-size: 1.45rem;
+    letter-spacing: 1.3px;
+}
+
+#expire-date {
+    position: absolute;
+    left: 17rem;
+}
+
+.frontcard footer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    left: 1.4rem;
+    bottom: 1.5rem;
+    font-size: 0.7rem;
+    letter-spacing: 1px; 
+}
+
+.backcard {
+    position: absolute;
+    top: 25vw;
+    left: 22vw;
+}
+
+.backcard img {
+    width: 21.9vw;
+    height: 12.5vw;
+}
+
+.backcard span {
+    position: absolute;
+    top: 43%;
+    right: 13%;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    gap: 0.8vw;
+    line-height: 1.6;
+    font-size: 0.75rem;
+    color: var(--verydarkviolet);
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.form input[type=text] {
+    width: 18vw;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-family: "Space Grotesk", sans-serif;
+    padding-left: 8px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.form input::placeholder {
+    color: var(--lightgrayishviolet);
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.form input[type=text]:focus {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.inactive {
+    border: 1px solid var(--lightgrayishviolet);
+}
+
+.active {
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.warned {
+    border: 1px solid var(--red);
+}
+
+.extra-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7vw;
+    width: 20vw;
+}
+
+.date-info {
+    display: flex;
+    flex-direction: row;
+}
+
+#exp-month, #exp-year {
+    width: 3.6vw;
+    margin-right: 0.4vw;
+}
+
+#cvc {
+    width: 7.7vw;
+}
+
+#btn-confirm {
+    width: 18.7vw;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--verydarkviolet);
+    color: white;
+}
+
+.complete-state {
+    margin: auto;
+    text-align: center;
+    line-height: 2;
+}
+
+.complete-state svg {
+    transform: scale(0.8);
+}
+
+#thank-you {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.complete-state footer {
+    font-weight: 700;
+    color: var(--darkgrayishviolet);
+    font-size: 0.9rem;
+}
+
+.complete-state button {
+    margin: 30px auto;
+    padding: 10px 7vw;
+    border-radius: 5px;
+    background-color: var(--verydarkviolet);
+    color: white;
+    font-family: "Space Grotesk";
+}
+
+.form section {
+    color: var(--red);
+    margin-top: 5px;
+    font-size: 0.7rem;
+    padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        flex-direction: column;
+    }
+
+    #background-img {
+        width: 100%;
+        height: 100%;
+        content: url("./images/bg-main-mobile.png");
+    }
+
+    .backcard {
+        top: 7vw;
+        left: 18vw;
+    }
+
+    .backcard img {
+        width: 77vw;
+        height: 43vw;
+    }    
+
+    .backcard span {
+        top: 19vw;
+        left: 62vw;
+        font-size: 2.8rem;
+    }
+
+    .frontcard {
+        top: 31vw;
+        left: 5vw;
+        z-index: 100;
+    }
+    
+    .frontcard img {
+        width: 77vw;
+        height: 43vw;
+    }
+
+    .frontcard header {
+        top: 4rem;
+        left: 5vw;
+        gap: 10px;
+    }
+
+    #white-circle {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 90%;
+    }
+
+    #transparent-circle {
+        width: 11px;
+        height: 11px;
+        margin-top: 9px;
+    }
+
+    #card-num {
+        left: 5vw;
+        bottom: 12vw;
+        font-size: 5.3rem;
+        letter-spacing: 1.2px;
+    }
+
+    .frontcard footer {
+        left: 5vw;
+        bottom: 5vw;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+
+    #expire-date {
+        left: 57rem;
+    }
+
+    .form {
+        margin: 70px 0 30px auto;
+        font-size: 3.6rem;
+        letter-spacing: 1.5px;
+    }
+
+    .form input[type="text"] {
+        width: 80vw;
+        height: 11vw;
+        font-size: 4rem;
+    }
+
+    .extra-info {
+        gap: 12px;
+        width: 91vw;
+    }
+
+    #exp-month, #exp-year {
+        width: 16vw;
+        margin-right: 0.6vw;
+    }
+
+    #cvc {
+        width: 37vw;
+    }
+
+    .form section {
+        margin-top: 5px;
+        font-size: 3.6rem;
+        padding: 0;
+    }
+
+    #btn-confirm {
+        margin-top: 20px;
+        width: 83vw;
+        height: 13vw;
+        font-size: 4rem;
+    }
+
+    .complete-state {
+        margin: 70px auto;
+    }
+
+    .complete-state svg {
+        transform: scale(1);
+    }
+
+    #thank-you {
+        font-size: 6rem;
+    }
+
+    .complete-state footer {
+        font-size: 4rem;
+    }
+
+    .complete-state button {
+        width: 83vw;
+        height: 13vw;
+        font-size: 4rem;
+    }
+}
+
+
