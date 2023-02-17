@@ -53,12 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 {
                     warnings[2].innerText = "";
                 }
-                else 
+                else if (i > 3)
                 {
-                    console.log(i - 1);
                     warnings[i - 1].innerText = "";
                 }
-            
         })
     }
     
@@ -76,7 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     numCardInput.addEventListener("keyup", (e) => {
         let val2 = numCardInput.value;
-        
         setTimeout(() => {
             if (e.key === "Backspace") {
                 cardNum.innerHTML = "0000 0000 0000 0000";
@@ -106,8 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 if (e.key === "Backspace") {
                     let year = expDate.innerHTML.substring(2);
-                    expDate.innerHTML = "00" + year;
-                    console.log(expDate.innerHTML);     
+                    expDate.innerHTML = "00" + year;   
                 }
                 expDate.innerHTML = Replace(expDate.innerHTML, val3.length % 2, val3);
             }, 100);
@@ -166,5 +162,5 @@ document.addEventListener("DOMContentLoaded", () => {
             endOfform();
         }
     })
-    let inputElements = document.getElementsByClassName("form-input");
+
 })
