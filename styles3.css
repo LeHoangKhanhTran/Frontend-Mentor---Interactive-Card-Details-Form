@@ -37,7 +37,7 @@ body {
 .frontcard header {
     position: absolute;
     top: 1.4rem;
-    left: 1.4rem;
+    left: 1.6rem;
     display: flex;
     flex-direction: row;
     gap: 12px;
@@ -62,15 +62,16 @@ body {
 #card-num {
     position: absolute;
     color: white;
-    left: 1.4rem;
-    bottom: 3.8rem;
+    left: 1.6rem;
+    bottom: 4rem;
     font-size: 1.45rem;
-    letter-spacing: 1.3px;
+    letter-spacing: 1.5px;
 }
 
 #expire-date {
     position: absolute;
-    left: 17rem;
+    left: 15.7rem;
+    letter-spacing: 1.5px;
 }
 
 .frontcard footer {
@@ -78,9 +79,9 @@ body {
     display: flex;
     flex-direction: row;
     color: white;
-    left: 1.4rem;
-    bottom: 1.5rem;
-    font-size: 0.7rem;
+    left: 1.6rem;
+    bottom: 1.7rem;
+    font-size: 0.75rem;
     letter-spacing: 1px; 
 }
 
