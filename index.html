@@ -21,8 +21,10 @@
 <body>
   <header class="background">
     <img id="background-img" src="./images/bg-main-desktop.png"> 
+  </header>
+  <div class="card-zone">
     <div class="frontcard">
-      <img src="./images/bg-card-front.png" alt="background">
+      <img class="card" src="./images/bg-card-front.png" alt="background">
       <header class="frontcard-header">
         <div id="white-circle"></div>
         <div id="transparent-circle"></div>
@@ -34,44 +36,49 @@
       </footer>
     </div> 
     <div class="backcard">
-      <img src="./images/bg-card-back.png">
+      <img class="card" src="./images/bg-card-back.png">
       <span id="cvc-num">000</span>
     </div>
-  </header>
-  <div class="form"> 
-    <div class="form-input cardholder-name">
-      <div>CARDHOLDER NAME</div>
-      <input class="input-field inactive" id="input-name" type="text" placeholder=" e.g. Jane Appleseed">
-      <section class="warning" id="card-name-warning"></section>
-    </div>
-    <div class="form-input card-number">
-      <div>CARD NUMBER</div>
-      <input class="input-field inactive" id="input-number" type="text" placeholder="e.g. 1234 5678 9123 0000">
-      <section class="warning" id="card-num-warning"></section>
-    </div>
-    <div class="extra-info">
-      <div class="form-input">
-        <div class="date-info">EXP. DATE(MM/YY)</div>
-          <input class="input-field inactive" id="exp-month" type="text" placeholder="MM">
-          <input class="input-field inactive" id="exp-year" type="text" placeholder="YY">
-        <section class="warning" id="card-date-warning"></section>
+  </div>
+  <div class="wrapper form">
+    <div class="form"> 
+      <div class="form-input cardholder-name">
+        <div>CARDHOLDER NAME</div>
+        <input class="input-field inactive" id="input-name" type="text" placeholder=" e.g. Jane Appleseed">
+        <section class="warning" id="card-name-warning"></section>
       </div>
-      <div class="form-input cvc">
-        <div>CVC</div>
-        <input class="input-field inactive" id="cvc" type="text" placeholder=" e.g. 123">
-        <section class="warning" id="card-cvc-warning"></section>
+      <div class="form-input card-number">
+        <div>CARD NUMBER</div>
+        <input class="input-field inactive" id="input-number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+        <section class="warning" id="card-num-warning"></section>
       </div>
+      <div class="extra-info">
+        <div class="form-input">
+          <div class="date-info">EXP. DATE(MM/YY)</div>
+            <input class="input-field inactive" id="exp-month" type="text" placeholder="MM">
+            <input class="input-field inactive" id="exp-year" type="text" placeholder="YY">
+          <section class="warning" id="card-date-warning"></section>
+        </div>
+        <div class="form-input cvc">
+          <div>CVC</div>
+          <input class="input-field inactive" id="cvc" type="text" placeholder=" e.g. 123">
+          <section class="warning" id="card-cvc-warning"></section>
+        </div>
+      </div>
+      <button id="btn-confirm" type="submit">Confirm</button>
     </div>
-    <button id="btn-confirm" type="submit">Confirm</button>
     <!-- Completed state start -->
-    </div>
-    <div class="complete-state" style="display: none;">
-      <div class="container">
-          <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
-        <div id="thank-you">THANK YOU!</div>
-        <footer>We've added your card details</footer>
-        <button id="btn-continue" type="submit">Continue</button>
+  </div>
+    <div class="wrapper complete-state" style="display: none;">
+      <div>
+        <div class="container">
+            <svg width="80" height="80" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="40" cy="40" r="40" fill="url(#a)"/><path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3"/><defs><linearGradient id="a" x1="-23.014" y1="11.507" x2="0" y2="91.507" gradientUnits="userSpaceOnUse"><stop stop-color="#6348FE"/><stop offset="1" stop-color="#610595"/></linearGradient></defs></svg>
+          <div id="thank-you">THANK YOU!</div>
+          <footer>We've added your card details</footer>
+          <button id="btn-continue" type="submit" value="This">Continue</button>
+        </div>
       </div>
     </div>
 </body>
+
 </html>

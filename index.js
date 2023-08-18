@@ -16,9 +16,10 @@ function isAllNumber(val) {
 
 function endOfform() {
     let form = document.querySelector(".form");
+    console.log(form);
     form.style.display = "none";
     let completeState = document.querySelector(".complete-state");
-    completeState.style.display = "";
+    completeState.style.display = "flex";
 }
 
 let changeable = true;
@@ -40,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let cvcNum = document.getElementById("cvc-num");
     let warnings = document.getElementsByClassName("warning");
     let button = document.getElementById("btn-confirm"); 
-    console.log(warnings);
     for(let i = 0; i < inputFields.length; i++)
     {
         inputFields[i].addEventListener("keyup", () => {
