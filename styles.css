@@ -256,6 +256,7 @@ body {
 @media screen and (max-width: 600px) {
     body {
         flex-direction: column;
+        overflow-y: auto;
     }
 
     .background {
