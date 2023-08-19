@@ -267,7 +267,8 @@ body {
     }
 
     .wrapper {
-        padding-top: 30vw;
+        padding-top: 20vw;
+        min-height: 500px;
         overflow-y: auto;
     }
 
