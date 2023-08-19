@@ -15,8 +15,7 @@ function isAllNumber(val) {
 }
 
 function endOfform() {
-    let form = document.querySelector(".form");
-    console.log(form);
+    let form = document.querySelector(".first");
     form.style.display = "none";
     let completeState = document.querySelector(".complete-state");
     completeState.style.display = "flex";

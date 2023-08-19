@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./styles3.css">
+  <link rel="stylesheet" href="./styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,27 +20,24 @@
 </head>
 <body>
   <header class="background">
-    <img id="background-img" src="./images/bg-main-desktop.png"> 
-  </header>
-  <div class="card-zone">
-    <div class="frontcard">
-      <img class="card" src="./images/bg-card-front.png" alt="background">
-      <header class="frontcard-header">
-        <div id="white-circle"></div>
-        <div id="transparent-circle"></div>
-      </header>
-      <div id="card-num">0000 0000 0000 0000</div>
+    <div class="card-zone">
+      <div class="frontcard card">
+        <header class="frontcard-header">
+          <div id="white-circle"></div>
+          <div id="transparent-circle"></div>
+        </header>
+        <div id="card-num">0000 0000 0000 0000</div>
       <footer class="card-info">
         <span id="user-name">JANE APPLESEED</span>
         <span id="expire-date">00/00</span>
       </footer>
-    </div> 
-    <div class="backcard">
-      <img class="card" src="./images/bg-card-back.png">
+    </div>
+    <div class="backcard card">
       <span id="cvc-num">000</span>
     </div>
   </div>
-  <div class="wrapper form">
+  </header>
+  <div class="wrapper first">
     <div class="form"> 
       <div class="form-input cardholder-name">
         <div>CARDHOLDER NAME</div>
@@ -55,8 +52,10 @@
       <div class="extra-info">
         <div class="form-input">
           <div class="date-info">EXP. DATE(MM/YY)</div>
-            <input class="input-field inactive" id="exp-month" type="text" placeholder="MM">
-            <input class="input-field inactive" id="exp-year" type="text" placeholder="YY">
+            <div class="exp">
+              <input class="input-field inactive" id="exp-month" type="text" placeholder="MM">
+              <input class="input-field inactive" id="exp-year" type="text" placeholder="YY">
+            </div>
           <section class="warning" id="card-date-warning"></section>
         </div>
         <div class="form-input cvc">
