@@ -267,8 +267,8 @@ body {
     }
 
     .wrapper {
-        padding-top: 20vw;
-        height: 70vh;
+        padding-top: 30vw;
+        overflow-y: auto;
     }
 
     .card-zone {
