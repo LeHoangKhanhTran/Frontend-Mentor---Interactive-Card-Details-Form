@@ -262,7 +262,7 @@ body {
     .background {
         position: static;
         width: 100vw;
-        height: 30vh;
+        height: 200px;
         background: url(./images/bg-main-mobile.png);
     }
 
