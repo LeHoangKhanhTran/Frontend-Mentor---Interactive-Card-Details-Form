@@ -268,7 +268,7 @@ body {
     .wrapper {
         padding-top: 20vw;
         height: 70vh;
-        min-width: 600px;
+        min-height: 600px;
     }
 
     .card-zone {
