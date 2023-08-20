@@ -269,6 +269,7 @@ body {
         padding-top: 20vw;
         height: 70vh;
         min-height: 600px;
+        overflow-y: auto;
     }
 
     .card-zone {
