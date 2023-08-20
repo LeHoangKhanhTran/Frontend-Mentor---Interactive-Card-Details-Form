@@ -49,7 +49,7 @@ body {
     width: 26vw;
     min-width: 270px;
     height: 15vw;
-    min-height: 155px;
+    min-height: 150px;
 }
 
 .frontcard {
@@ -87,7 +87,7 @@ body {
     color: white;
     left: 1.6rem;
     bottom: 2.3em;
-    font-size: 1.85em;
+    font-size: 1.85rem;
     letter-spacing: 1.5px;
 }
 
@@ -260,16 +260,14 @@ body {
     }
 
     .background {
-        position: static;
         width: 100vw;
-        height: 200px;
+        height: 30vh;
         background: url(./images/bg-main-mobile.png);
     }
 
     .wrapper {
         padding-top: 20vw;
-        min-height: 500px;
-        overflow-y: auto;
+        height: 70vh;
     }
 
     .card-zone {
