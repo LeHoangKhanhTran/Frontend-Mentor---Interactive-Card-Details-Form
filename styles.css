@@ -3,8 +3,8 @@
     --darkgrayishviolet: hsl(279, 6%, 55%);
     --verydarkviolet: hsl(278, 68%, 11%);
     --red: hsl(0, 100%, 66%);  
-    font-size: 1vw;
-    overflow: hidden;
+    font-size: 1vw; 
+    overflow-x: hidden;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
     flex-direction: row;
     font-family: "Space Grotesk", sans-serif;
     box-sizing: border-box;
-    overflow: hidden;
+
 }
 
 .wrapper {
@@ -144,7 +144,6 @@ body {
 }
 
 .form input[type=text] {
-    border: 1.2px solid #ebe1f3;
     box-sizing: border-box;
     width: 100%;
     height: 40px;
@@ -170,7 +169,7 @@ body {
 }
 
 .inactive {
-    border: 1px solid var(--lightgrayishviolet);
+    border: 1.2px solid #ebe1f3;
 }
 
 .active {
@@ -344,7 +343,7 @@ body {
     }
 
     .form {
-        font-size: 3.6rem;
+        font-size: 3rem;
         letter-spacing: 1.5px;
         min-width: 310px;
     }

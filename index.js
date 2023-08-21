@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             if (!isAllNumber(val2))
             {
+                numCardInput.classList.remove("inactive");
                 numCardInput.classList.add("warned");
                 numWarning.innerText = "Wrong format, numbers only";
                 changeable = false;
