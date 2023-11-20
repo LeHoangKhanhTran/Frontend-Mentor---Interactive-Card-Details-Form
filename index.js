@@ -73,6 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     numCardInput.addEventListener("keyup", (e) => {
         let val2 = numCardInput.value;
+        numCardInput.value = val2.toString().toUpperCase();
         setTimeout(() => {
             if (e.key === "Backspace") {
                 cardNum.innerHTML = "0000 0000 0000 0000";

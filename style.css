@@ -172,13 +172,6 @@ body {
     border: 1.2px solid #ebe1f3;
 }
 
-.active {
-    background: linear-gradient(white, white) padding-box,
-    linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)) border-box;
-    border-radius: 5px;
-    border: 1px solid transparent;
-}
-
 .warned {
     border: 1px solid var(--red);
 }
